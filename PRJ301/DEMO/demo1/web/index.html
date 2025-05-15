@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="ServletA">Servlet A</a></p>
+        <p><a href="ServletC?msg=em nhat dinh pass mon nay">Servlet C</a></p>
+        <form action="ServletB" method="get">
+            <p><input type="text" name="email" placeholder="Enter your email" /></p>
+            <p><input type="password" name="pass" placeholder="Enter your password" /></p>
+            <input type="submit" name="btnlogin" value="Log in" />
+            
+        </form>
+        <form action="ServletD" method="post">
+            <p>Full name: <input type="text" name="fullname" placeholder="Enter fullname"/></p>
+            <p>SEX: 
+            <input type="radio" name="sex" checked="" value="F"/>Female
+            <input type="radio" name="sex"  value="M"/>Male
+            </p>
+            <p>Major: 
+                <select name="job" required="">
+                    <option value="">--OP---</option>
+                    <option value="student">student</option>
+                    <option value="shipper">shipper</option>
+                    <option value="gymmer">gymmer</option>
+                </select>
+            </p>
+            
+            <p> Language: 
+                <input type="checkbox" name="chk1" value="English"/>English
+                <input type="checkbox" name="chk2" value="Vietnamese"/>Vietnamese
+                <input type="checkbox" name="chk3" value="Hyndu"/>Hyndu
+            </p>
+            
+            
+            <p>Age: 
+                <input type="number" min=16 max=65 name="age"/>
+            </p>
+            <p> BDate: 
+                <input type="date" name="dob"/>
+            </p>
+            <p>Comment: 
+                <textarea name="comment"></textarea>
+            </p>
+            <input type="submit" name="btnok" value="ok"/>
+        </form>
+    </body>
+</html>
